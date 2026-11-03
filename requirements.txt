@@ -1,0 +1,11 @@
+# Install a matching torch/torchvision pair for your CUDA environment first.
+torch>=1.10
+torchvision>=0.11
+numpy
+scipy
+pycocotools>=2.0.6
+Pillow
+addict
+yapf==0.40.1
+termcolor
+matplotlib

@@ -1,0 +1,296 @@
+{
+  "authoritative_run_config_sha256": "d8babef5ab65417a2ad3aead9611b8de4a2fc47bc47d86ae7259179273d2762c",
+  "authoritative_run": "output_aitod/config_args_all.json",
+  "source_file_inventory": [
+    {
+      "source_relative": "datasets/coco_eval.py",
+      "release_relative": "datasets/coco_eval.py",
+      "source_sha256": "a80b849f2af5221fa79c391fa7b2ae1ae016a68c0a6c664b5c7d7f0e030a64e8"
+    },
+    {
+      "source_relative": "datasets/transforms.py",
+      "release_relative": "datasets/transforms.py",
+      "source_sha256": "3257fc69dd2b8386bcb9211b2e06893a0aa861e6a3007d9b41a13fb75da4698f"
+    },
+    {
+      "source_relative": "engine.py",
+      "release_relative": "engine.py",
+      "source_sha256": "888aa5d55310e687d8cb9ce4046cdc4054cebfdb2aea888631cb4af2b7120a06"
+    },
+    {
+      "source_relative": "LICENSE",
+      "release_relative": "LICENSE",
+      "source_sha256": "465ed5f2f9d61880f2f37c7b8de6c7342813c80c92bc3542ea7dd55422c4637c"
+    },
+    {
+      "source_relative": "main.py",
+      "release_relative": "main.py",
+      "source_sha256": "f67851da8bf5ded9a9fdacb0f9707ebb10699ad37ae9ca84d9d5ed834efe92cf"
+    },
+    {
+      "source_relative": "models/__init__.py",
+      "release_relative": "models/__init__.py",
+      "source_sha256": "37352b3203d55795772cb1e196dea5d46bfd1ee3421c6b4eae62c653af105b6e"
+    },
+    {
+      "source_relative": "models/dino/__init__.py",
+      "release_relative": "models/dino/__init__.py",
+      "source_sha256": "14ad68ba01e276c94280addb55701b165851a9b380d5183c2b2807c9f97c0671"
+    },
+    {
+      "source_relative": "models/dino/attention.py",
+      "release_relative": "models/dino/attention.py",
+      "source_sha256": "19e851db1df38cac0fdfe5c03a5b486217fcea4593ffaf6a55e566f39264c395"
+    },
+    {
+      "source_relative": "models/dino/backbone.py",
+      "release_relative": "models/dino/backbone.py",
+      "source_sha256": "b4dea062be8c467a6cfea1d25cac72fbd78ec0a5b3defa7af9e250d362c11ac2"
+    },
+    {
+      "source_relative": "models/dino/deformable_transformer.py",
+      "release_relative": "models/dino/deformable_transformer.py",
+      "source_sha256": "89a80a1f3263b1035cb13a76067ef710e064bc25857cd787b3601dc6db1728a4"
+    },
+    {
+      "source_relative": "models/dino/dino.py",
+      "release_relative": "models/dino/dino.py",
+      "source_sha256": "a69defd765471a0985a1fc3bbdc06853b17c52696513c7241d81dc0a9e472f28"
+    },
+    {
+      "source_relative": "models/dino/dn_components.py",
+      "release_relative": "models/dino/dn_components.py",
+      "source_sha256": "7e758cce3b733e5d7638a3559b6457c51e8c1b80f3b7675f5c02e1c2e3ff300c"
+    },
+    {
+      "source_relative": "models/dino/matcher.py",
+      "release_relative": "models/dino/matcher.py",
+      "source_sha256": "4c263b3969298478e403711f664f57da41d2b21151543949e2f36f731968f21a"
+    },
+    {
+      "source_relative": "models/dino/ops/functions/__init__.py",
+      "release_relative": "models/dino/ops/functions/__init__.py",
+      "source_sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "source_relative": "models/dino/ops/functions/ms_deform_attn_func.py",
+      "release_relative": "models/dino/ops/functions/ms_deform_attn_func.py",
+      "source_sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "source_relative": "models/dino/ops/make.sh",
+      "release_relative": "models/dino/ops/make.sh",
+      "source_sha256": "92be3b593591fa86f191752d71ac8ddc163289171e1f77faba09a8b007a46d2b"
+    },
+    {
+      "source_relative": "models/dino/ops/modules/__init__.py",
+      "release_relative": "models/dino/ops/modules/__init__.py",
+      "source_sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "source_relative": "models/dino/ops/modules/ms_deform_attn.py",
+      "release_relative": "models/dino/ops/modules/ms_deform_attn.py",
+      "source_sha256": "63208d06337a0160022fae35d38d835651d93db50efc120340dd3ddf30faf462"
+    },
+    {
+      "source_relative": "models/dino/ops/setup.py",
+      "release_relative": "models/dino/ops/setup.py",
+      "source_sha256": "9675fc02e522204d6f3af59dca6dcad00b59a8b2b192e30e54f3e04279e279f2"
+    },
+    {
+      "source_relative": "models/dino/ops/src/cpu/ms_deform_attn_cpu.cpp",
+      "release_relative": "models/dino/ops/src/cpu/ms_deform_attn_cpu.cpp",
+      "source_sha256": "d7f7c3d2df2484f3905005e13c8dc12dd943fd4451a59a059bda367eefa4dccd"
+    },
+    {
+      "source_relative": "models/dino/ops/src/cpu/ms_deform_attn_cpu.h",
+      "release_relative": "models/dino/ops/src/cpu/ms_deform_attn_cpu.h",
+      "source_sha256": "b9114ab52ea7610184b3eb9672731c3d1a7ce92e69bfdec6cf661ae988416aef"
+    },
+    {
+      "source_relative": "models/dino/ops/src/cuda/ms_deform_attn_cuda.cu",
+      "release_relative": "models/dino/ops/src/cuda/ms_deform_attn_cuda.cu",
+      "source_sha256": "65cf318c67d99d6b163027e7190bc8776ff16a7197b332ad537f70cf6cc12be0"
+    },
+    {
+      "source_relative": "models/dino/ops/src/cuda/ms_deform_attn_cuda.h",
+      "release_relative": "models/dino/ops/src/cuda/ms_deform_attn_cuda.h",
+      "source_sha256": "c9cd9345e0881dfeebbfa5e98b6e6990a3d415a430bcbaaba3706ce5a2379401"
+    },
+    {
+      "source_relative": "models/dino/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+      "release_relative": "models/dino/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+      "source_sha256": "136729520587cbf0593209d692af61a1e8af5909bcf34b8bacb8844878496bad"
+    },
+    {
+      "source_relative": "models/dino/ops/src/ms_deform_attn.h",
+      "release_relative": "models/dino/ops/src/ms_deform_attn.h",
+      "source_sha256": "2fdc244f99e3e3b9af8dae02e09139de3f546eef83748495c3f175f48278cf41"
+    },
+    {
+      "source_relative": "models/dino/ops/src/vision.cpp",
+      "release_relative": "models/dino/ops/src/vision.cpp",
+      "source_sha256": "8dec032236873cee3ae86921dabbbb02c62ffd95ddbb83aef0b1b856771e8a61"
+    },
+    {
+      "source_relative": "models/dino/ops/test.py",
+      "release_relative": "models/dino/ops/test.py",
+      "source_sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942"
+    },
+    {
+      "source_relative": "models/dino/position_encoding.py",
+      "release_relative": "models/dino/position_encoding.py",
+      "source_sha256": "fac739a516e2a561547e2889f14dfc4565e75d5d57b9de32441f68ac1118c26f"
+    },
+    {
+      "source_relative": "models/dino/utils.py",
+      "release_relative": "models/dino/utils.py",
+      "source_sha256": "eaa1212ccda055c3f27fa81fe90f0023a58bb3d00aa6a38e9e72a51dfb041757"
+    },
+    {
+      "source_relative": "models/dino/vca_dn_loss.py",
+      "release_relative": "models/dino/vcr_loss.py",
+      "source_sha256": "2683b1d88a60dccf8353c5a653114cfcb5484615b7a7217938101062de26d3f8"
+    },
+    {
+      "source_relative": "models/dino/vca_enhancement.py",
+      "release_relative": "models/dino/vcr_enhancement.py",
+      "source_sha256": "bca383a3bf750a3591ae65624afa117261787ec7398ff082039bf49c87cfdb70"
+    },
+    {
+      "source_relative": "models/dino/vca_module.py",
+      "release_relative": "models/dino/vcr_head.py",
+      "source_sha256": "60c684ed4ac989c0f9a49b96888679d26c35fccc4a5e864ffff307611a8f2b50"
+    },
+    {
+      "source_relative": "models/registry.py",
+      "release_relative": "models/registry.py",
+      "source_sha256": "3d0d7c2ffb64ad5c1da57201623b0a0baca865f55f8026216a3a930830ea5253"
+    },
+    {
+      "source_relative": "tools/ablation_results.py",
+      "release_relative": "tools/ablation_results.py",
+      "source_sha256": "3cce4f2231392a60f81a4b3ea0489af86a71c0c9dcf47979b3c95215433e55b6"
+    },
+    {
+      "source_relative": "tools/eval_aitodv2.py",
+      "release_relative": "tools/eval_aitodv2.py",
+      "source_sha256": "797cb8ca7e4563721ebb8dd156d4d4e553014a07abfdaf895880578d89955b11"
+    },
+    {
+      "source_relative": "tools/inference_visualize.py",
+      "release_relative": "tools/inference_visualize.py",
+      "source_sha256": "20af911fec90ce0c4c0bad8ed5dbe7c896f7d4959ee6f9fe4f50b2818d292320"
+    },
+    {
+      "source_relative": "tools/plot_vca_csv_pdf.py",
+      "release_relative": "tools/plot_vcr_csv_pdf.py",
+      "source_sha256": "ef74efa21c5f52379ac0494213296b114c7ba0052c885b9468001208a3d5d54d"
+    },
+    {
+      "source_relative": "tools/run_ablation_first5.py",
+      "release_relative": "tools/run_ablations.py",
+      "source_sha256": "49205cc20e1ee374a546cd20c3488bba97b33b9d0ee532b3f193409c9d27f2b0"
+    },
+    {
+      "source_relative": "tools/test_best_weights.py",
+      "release_relative": "tests/test_best_weights.py",
+      "source_sha256": "05dbd0f9b0276a1e10944f7533c08e46e6b5c5206e103a26e6b66e8ea513fc0e"
+    },
+    {
+      "source_relative": "tools/test_eval_aitodv2.py",
+      "release_relative": "tests/test_eval_aitodv2.py",
+      "source_sha256": "e2744ec5f5324b120bb22f1e0be07517c6a5c18a78d8d204e4557044e900433a"
+    },
+    {
+      "source_relative": "tools/test_ns_cdn.py",
+      "release_relative": "tests/test_ns_cdn.py",
+      "source_sha256": "c83d92eee7ab9e691d361aeb412fd47e16f7ec531495f97167bb1b70303c67a8"
+    },
+    {
+      "source_relative": "tools/test_vca_gt_constrained.py",
+      "release_relative": "tests/test_vcr.py",
+      "source_sha256": "fcefaff0a302c318ee48f49525de1873c564fbf670321ffd3f864819e3fea5b2"
+    },
+    {
+      "source_relative": "tools/visualize_sadra.py",
+      "release_relative": "tools/visualize_sadra.py",
+      "source_sha256": "5ec2d2b51cb3e460800eb0ebeb01b8d63f61da28b9c9a8079b8ec803fdc9bbf5"
+    },
+    {
+      "source_relative": "tools/visualize_vca.py",
+      "release_relative": "tools/visualize_vcr.py",
+      "source_sha256": "a1da3dba5503527426ff7dd1e1f28e84547e365648f65e285185793baec580f4"
+    },
+    {
+      "source_relative": "util/__init__.py",
+      "release_relative": "util/__init__.py",
+      "source_sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35"
+    },
+    {
+      "source_relative": "util/best_weights.py",
+      "release_relative": "util/best_weights.py",
+      "source_sha256": "f6f214d17a2644630e7aaeb62747a091068de0c87756bbeccf8da1198e9b8a6f"
+    },
+    {
+      "source_relative": "util/box_loss.py",
+      "release_relative": "util/box_loss.py",
+      "source_sha256": "573d78428ba4f9d22c50b13368a33d708c057eedc82a7bb5ac69186ba732c019"
+    },
+    {
+      "source_relative": "util/box_ops.py",
+      "release_relative": "util/box_ops.py",
+      "source_sha256": "3d5e5317a8d211637bc4eb355e2d99650a494ca88895f7e3fa4fc7fb2db3a732"
+    },
+    {
+      "source_relative": "util/get_param_dicts.py",
+      "release_relative": "util/get_param_dicts.py",
+      "source_sha256": "77fdb5c32d09ff563845538e108f1d183a4e673e69f0cb56929ae7452c99546a"
+    },
+    {
+      "source_relative": "util/logger.py",
+      "release_relative": "util/logger.py",
+      "source_sha256": "51aa569f90461ffb4bc0764ac64c7c54c98b4e9425ecbc780310c042e956f599"
+    },
+    {
+      "source_relative": "util/misc.py",
+      "release_relative": "util/misc.py",
+      "source_sha256": "f800d77a325123a8f678a1882aac0130dab46191eb6c368d779fa750e1d233ba"
+    },
+    {
+      "source_relative": "util/slconfig.py",
+      "release_relative": "util/slconfig.py",
+      "source_sha256": "5a94b488bde824052f3882cff86e6037a18685058351d3b29e12e89c3ea47d9d"
+    },
+    {
+      "source_relative": "util/utils.py",
+      "release_relative": "util/utils.py",
+      "source_sha256": "56ba35eda94b3a5ab761a9ab20172d825fc74e2321233fa3123d849eef66bc62"
+    }
+  ],
+  "preserved_settings": {
+    "num_feature_levels": 5,
+    "num_classes": 9,
+    "embed_init_tgt": false,
+    "use_vcr": true,
+    "vcr_loss_coef": 0.5,
+    "use_sadra": true,
+    "sadra_use_boundary_band": true,
+    "sadra_boundary_band_width": 0.2,
+    "use_ns_cdn": false
+  },
+  "non_runtime_config_fields_removed": [
+    "ccm_cls_num",
+    "ccm_params",
+    "dn_bbox_coef",
+    "dn_label_coef",
+    "dn_scalar",
+    "dynamic_query_list",
+    "find_unused_parameters",
+    "val_epoch"
+  ],
+  "note": "No datasets, private absolute paths, logs, weight files or unrelated projects are included.",
+  "release_model_name": "DRCC-DETR",
+  "release_model_registry": "drcc_detr",
+  "repository": "https://github.com/novic-noob-svg/DRCC-DETR"
+}

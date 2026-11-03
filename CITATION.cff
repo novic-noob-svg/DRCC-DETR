@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this source code, cite the DRCC-DETR manuscript and upstream DINO."
+type: software
+title: "DRCC-DETR: Dual-Region Contrastive and Context Learning for Small Object Detection"
+authors:
+  - family-names: Zhang
+    given-names: Yuting
+  - family-names: Zhou
+    given-names: Huaqiu
+  - family-names: Zhang
+    given-names: Lei
+  - family-names: Tian
+    given-names: Kang
+  - family-names: Liao
+    given-names: Jianxin
+  - family-names: Wei
+    given-names: JunFu
+  - family-names: Zhu
+    given-names: Hengliang
+  - family-names: Chen
+    given-names: Zhou
+  - family-names: Chai
+    given-names: Haojun
+license: Apache-2.0
+repository-code: "https://github.com/novic-noob-svg/DRCC-DETR"

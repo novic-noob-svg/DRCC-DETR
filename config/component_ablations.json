@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "description": "Component ablations. The historical suite uses neighbor-safe CDN; this differs from the final AI-TOD run.",
+  "common_args": [
+    "--no_sadra_boundary_band",
+    "--sadra_max_scale",
+    "2.5",
+    "--sadra_scale_threshold",
+    "0.1",
+    "--sadra_context_points",
+    "2",
+    "--sadra_use_scale_expansion",
+    "--sadra_use_region_prior",
+    "--vcr_enhancement_mode",
+    "laplacian",
+    "--vcr_temperature",
+    "0.07",
+    "--vcr_gt_constrained",
+    "--vcr_use_negative_queries"
+  ],
+  "common_options": [
+    "dec_n_points=4",
+    "use_ns_cdn=True"
+  ],
+  "default_experiments": [
+    "sadra_no_scale",
+    "vcr_no_laplacian",
+    "vcr_constant_gain",
+    "sadra_no_prior",
+    "sadra_k1",
+    "sadra_k3"
+  ],
+  "experiments": [
+    {
+      "name": "dino_reference",
+      "rank": 0,
+      "reference": null,
+      "description": "DINO reference with the same neighbor-safe CDN as all other runs",
+      "args": [
+        "--no_use_vcr",
+        "--no_use_sadra"
+      ]
+    },
+    {
+      "name": "vcr_reference",
+      "rank": 0,
+      "reference": "dino_reference",
+      "description": "VCR only, original Laplacian enhancement; reference for items 2 and 3",
+      "args": [
+        "--use_vcr",
+        "--no_use_sadra"
+      ]
+    },
+    {
+      "name": "sadra_reference",
+      "rank": 0,
+      "reference": "dino_reference",
+      "description": "SADRA only, expansion + prior, P=4/K=2, boundary band off",
+      "args": [
+        "--no_use_vcr",
+        "--use_sadra"
+      ]
+    },
+    {
+      "name": "sadra_no_scale",
+      "rank": 1,
+      "reference": "sadra_reference",
+      "description": "Disable context expansion (alpha=1); keep the region prior and K=2",
+      "args": [
+        "--no_use_vcr",
+        "--use_sadra"
+      ],
+      "overrides": {
+        "--sadra_use_scale_expansion": [
+          "--no_sadra_scale_expansion"
+        ]
+      }
+    },
+    {
+      "name": "vcr_no_laplacian",
+      "rank": 2,
+      "reference": "vcr_reference",
+      "description": "Fe=Fp; keep the projection, GT support, VCR head and VCR loss",
+      "args": [
+        "--use_vcr",
+        "--no_use_sadra"
+      ],
+      "overrides": {
+        "--vcr_enhancement_mode": [
+          "--vcr_enhancement_mode",
+          "identity"
+        ]
+      }
+    },
+    {
+      "name": "vcr_constant_gain",
+      "rank": 3,
+      "reference": "vcr_reference",
+      "description": "Fe=1.5Fp (fixed gate=0.5); keep all other VCR settings",
+      "args": [
+        "--use_vcr",
+        "--no_use_sadra"
+      ],
+      "overrides": {
+        "--vcr_enhancement_mode": [
+          "--vcr_enhancement_mode",
+          "constant"
+        ]
+      }
+    },
+    {
+      "name": "sadra_no_prior",
+      "rank": 4,
+      "reference": "sadra_reference",
+      "description": "Remove the regional log-prior; retain scale expansion and K=2",
+      "args": [
+        "--no_use_vcr",
+        "--use_sadra"
+      ],
+      "overrides": {
+        "--sadra_use_region_prior": [
+          "--no_sadra_region_prior"
+        ]
+      }
+    },
+    {
+      "name": "sadra_k1",
+      "rank": 5,
+      "reference": "sadra_reference",
+      "description": "P=4/K=1: three local points and one context point",
+      "args": [
+        "--no_use_vcr",
+        "--use_sadra"
+      ],
+      "overrides": {
+        "--sadra_context_points": [
+          "--sadra_context_points",
+          "1"
+        ]
+      }
+    },
+    {
+      "name": "sadra_k3",
+      "rank": 5,
+      "reference": "sadra_reference",
+      "description": "P=4/K=3: one local point and three context points",
+      "args": [
+        "--no_use_vcr",
+        "--use_sadra"
+      ],
+      "overrides": {
+        "--sadra_context_points": [
+          "--sadra_context_points",
+          "3"
+        ]
+      }
+    }
+  ]
+}

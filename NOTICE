@@ -1,0 +1,17 @@
+DRCC-DETR source preparation
+
+This distribution is derived from DINO and related upstream detection code.
+
+DINO: Copyright (c) 2022 IDEA. All Rights Reserved.
+Conditional DETR: Copyright (c) 2021 Microsoft. All Rights Reserved.
+Deformable DETR: Copyright (c) 2020 SenseTime. All Rights Reserved.
+DETR: Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+
+Original source copyright and attribution comments are preserved. The original
+Apache License, Version 2.0 is included as LICENSE.
+
+This prepared version adds VCR/SADRA paper-name interfaces, legacy configuration
+and tensor-name migration, final-run configuration extraction, detection-only
+source organization, documentation, and focused CPU regression checks.
+
+The CUDA kernels retain their original upstream implementation and attribution.
